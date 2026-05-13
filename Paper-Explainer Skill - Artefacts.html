@@ -1,0 +1,486 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"></head><body><div class="zotero-notes"><div class="zotero-note"><h2>Artefact 1 — Key Concepts Table</h2>
+<table>
+<tbody>
+<tr>
+<th data-colwidth="235">
+<p>Concept</p>
+</th>
+<th>
+<p>Plain-language explanation</p>
+</th>
+<th>
+<p>Why it matters in this paper</p>
+</th>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Local Energy Market (LEM)</strong></p>
+</td>
+<td>
+<p>A group of electricity producers and consumers ("prosumers") who trade energy among themselves within a defined part of the grid, rather than relying solely on the main wholesale market</p>
+</td>
+<td>
+<p>The paper asks: which groups should form LEMs, and how large should they be?</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Prosumer</strong></p>
+</td>
+<td>
+<p>A grid participant who both produces (e.g. rooftop solar) and consumes electricity, and may also store it via a battery</p>
+</td>
+<td>
+<p>The basic unit of analysis — LEMs are coalitions of prosumers</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Distribution grid partition</strong></p>
+</td>
+<td>
+<p>A way of dividing the local electricity network (the wires connecting homes and businesses) into non-overlapping, connected subgraphs, each managed by one LEM</p>
+</td>
+<td>
+<p>The paper's central object: finding the best such division</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Cooperative game theory</strong></p>
+</td>
+<td>
+<p>A branch of mathematics that studies how rational agents form groups (coalitions), share costs or profits, and whether anyone has an incentive to defect</p>
+</td>
+<td>
+<p>Provides the formal tools to predict which LEM groupings will actually be stable</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Coalition stability / Core</strong></p>
+</td>
+<td>
+<p>A coalition is "stable" if there is a way to share its costs among members so that no subgroup would be better off leaving to form their own separate group</p>
+</td>
+<td>
+<p>Stability from the prosumers' perspective — the core is the set of all such valid cost-sharing arrangements</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Distribution System Operator (DSO)</strong></p>
+</td>
+<td>
+<p>The entity that owns and manages the local electricity network (poles, wires, transformers) and is responsible for keeping voltages and line flows within safe limits</p>
+</td>
+<td>
+<p>Has a different objective from prosumers: minimise total grid costs, not just one coalition's costs</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Autarky / self-consumption</strong></p>
+</td>
+<td>
+<p>A coalition operating in an "island" mode — generating and consuming its own electricity internally, with minimal imports/exports to the wider grid</p>
+</td>
+<td>
+<p>The paper frames LEMs as autarkic coalitions; self-consumption is incentivised by tariffs on cross-boundary flows</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Two-stage dispatch (ex-ante / ex-post)</strong></p>
+</td>
+<td>
+<p>Stage 1 (ex-ante): dispatch decisions are made using <em>forecast</em> prosumption. Stage 2 (ex-post): actual prosumption is realised; any forecast errors cause voltage/line violations and energy imbalances that incur penalty costs</p>
+</td>
+<td>
+<p>The two-stage structure is how the paper models real-world uncertainty</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Forecast error / prosumption uncertainty</strong></p>
+</td>
+<td>
+<p>The difference between what was predicted (e.g. solar output or heat pump consumption) and what actually occurred</p>
+</td>
+<td>
+<p>The key driver of the paper's results — uncertainty is what makes smaller partitions preferable</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Externalities (power flow coupling)</strong></p>
+</td>
+<td>
+<p>When one LEM's costs are affected by what another LEM does, because power flows through shared network infrastructure — changing one coalition's dispatch shifts voltages seen by adjacent coalitions</p>
+</td>
+<td>
+<p>Complicates the stability analysis; the paper handles both the case with and without externalities</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Optimal stable partition</strong></p>
+</td>
+<td>
+<p>The grid partition that minimises total network costs (DSO objective) subject to the constraint that every LEM coalition in that partition is stable (no subset of prosumers wants to defect)</p>
+</td>
+<td>
+<p>The central solution concept of the paper — balancing DSO and prosumer interests</p>
+</td>
+</tr>
+<tr>
+<td data-colwidth="235">
+<p><strong>Partition function form game</strong></p>
+</td>
+<td>
+<p>A game-theoretic framework where a coalition's payoff depends not just on who is in it, but on how the <em>rest</em> of the players are grouped</p>
+</td>
+<td>
+<p>Used when externalities exist — coalition costs are not independent of the surrounding partition</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Artefact 2 — Key Terms (20 terms, 5 categories)</h2>
+<p><strong>Category 1: Electricity Market &amp; Grid Actors</strong></p>
+<ol>
+<li>
+<strong>Prosumer</strong> — A grid participant who both generates and consumes electricity (and typically has a battery for storage)
+</li>
+<li>
+<strong>DSO (Distribution System Operator)</strong> — The regulated entity that owns the local wire network and must keep it safe and balanced
+</li>
+<li>
+<strong>Point of Common Coupling (PCC)</strong> — The connection point where a LEM coalition's internal network connects to the rest of the distribution grid; the "meter boundary" for the coalition
+</li>
+<li>
+<strong>Energy Storage System (ESS)</strong> — A battery that a prosumer can charge or discharge to shift energy in time, used here as the main source of flexibility
+</li>
+</ol>
+<p><strong>Category 2: Local Energy Market Design</strong> 5. <strong>LEM (Local Energy Market)</strong> — A self-organising trading arrangement among a cluster of prosumers sharing a section of grid 6. <strong>Grid partition</strong> — A mathematically precise assignment of every prosumer to exactly one LEM coalition, covering the entire distribution network 7. <strong>Self-consumption / autarky</strong> — The goal of a LEM to supply its members' needs from internal generation, avoiding external imports/exports 8. <strong>Tariff (κt)</strong> — A per-unit charge levied on power that crosses a LEM's boundary, used by the DSO to incentivise self-consumption</p>
+<p><strong>Category 3: Cooperative Game Theory</strong> 9. <strong>Coalition</strong> — Any subset of prosumers who agree to trade together in a LEM 10. <strong>Core</strong> — The set of cost-sharing arrangements under which no sub-coalition would do better by breaking away; non-empty core = stable coalition 11. <strong>Stable partition</strong> — A complete grid partition in which every constituent LEM has a non-empty core 12. <strong>Deviation</strong> — When a subset of prosumers in a LEM decides to leave and form (or join) an alternative coalition; the threat of deviation drives the stability analysis</p>
+<p><strong>Category 4: Power System Engineering</strong> 13. <strong>Linear DistFlow equations</strong> — A simplified but accurate model of how voltages and power flows propagate through a radial (tree-shaped) distribution network 14. <strong>Voltage deviation (δv)</strong> — How far a node's voltage is from the reference level; large deviations indicate grid stress 15. <strong>Line (branch) power flow</strong> — The amount of electricity moving through a wire at a given time; too much causes overloading 16. <strong>Radial network</strong> — A tree-structured grid (no loops) common in distribution systems, where power flows outward from a single root</p>
+<p><strong>Category 5: Optimisation &amp; Uncertainty</strong> 17. <strong>Ex-ante dispatch</strong> — The scheduled operation of flexible resources (batteries, heat pumps) decided <em>before</em> actual conditions are known, based on forecasts 18. <strong>Ex-post costs</strong> — Penalty costs incurred <em>after</em> the fact when realised conditions differ from forecasts (line overloads, voltage violations, energy imbalances) 19. <strong>Distribution Locational Marginal Price (DLMP)</strong> — The shadow price of energy at a specific node in the distribution grid, used to allocate costs across coalitions 20. <strong>Monte Carlo simulation</strong> — A technique that runs thousands of random scenarios to estimate expected outcomes under uncertainty; used here to test partition stability across many possible prosumption realisations</p>
+<hr>
+<h2>Artefact 3 — Step-by-Step Definitions</h2>
+<p><strong>Grid Partition (Definition II.1)</strong></p>
+<ul>
+<li>
+Step 1: Take the full distribution network as a graph — nodes are buses (connection points), edges are power lines.
+</li>
+<li>
+Step 2: Divide the edges into groups so no edge belongs to more than one group (non-overlapping).
+</li>
+<li>
+Step 3: Ensure every prosumer (leaf node) is assigned to exactly one group.
+</li>
+<li>
+Step 4: Each group, together with its internal wires, forms one LEM coalition's territory.
+</li>
+<li>
+Result: A complete, non-overlapping assignment of all prosumers to LEM coalitions.
+</li>
+</ul>
+<p><strong>Core (Definition V.1)</strong></p>
+<ul>
+<li>
+Step 1: Start with a LEM coalition and its total cost (the bill the DSO hands it).
+</li>
+<li>
+Step 2: Distribute that cost across the coalition's members using some allocation rule — this is a candidate cost-sharing arrangement.
+</li>
+<li>
+Step 3: For every possible sub-group that could break away, check: would their share of the allocation be <em>less than or equal to</em> what they would pay if they formed their own separate LEM?
+</li>
+<li>
+Step 4: If you can find at least one allocation that satisfies Step 3 for <em>all</em> possible sub-groups simultaneously, the core is non-empty — the coalition is stable.
+</li>
+<li>
+Step 5: If no such allocation exists, some sub-group always has an incentive to defect, and the coalition is unstable.
+</li>
+</ul>
+<p><strong>Stable Partition (Definition V.2)</strong></p>
+<ul>
+<li>
+Step 1: Check every LEM coalition in the partition individually.
+</li>
+<li>
+Step 2: For each coalition, determine whether its core is non-empty (using the definition above).
+</li>
+<li>
+Step 3: Only if <em>every</em> coalition in the partition has a non-empty core is the <em>partition</em> itself stable.
+</li>
+<li>
+Intuition: A stable partition is one where, even though prosumers are grouped in a particular way, no group of them — anywhere in the grid — has a reason to rearrange.
+</li>
+</ul>
+<p><strong>Ex-Ante Dispatch</strong></p>
+<ul>
+<li>
+Step 1: Before the day's trading begins, each LEM solves an optimal scheduling problem using <em>forecast</em> prosumption values.
+</li>
+<li>
+Step 2: The schedule specifies how much each battery should charge or discharge at each time period.
+</li>
+<li>
+Step 3: This schedule also determines the coalition's planned power exchanges across its boundary.
+</li>
+<li>
+Step 4: The resulting costs (battery wear, import prices, boundary tariffs) are the ex-ante costs — locked in before reality is known.
+</li>
+</ul>
+<p><strong>Externalities (power flow coupling)</strong></p>
+<ul>
+<li>
+Step 1: In a network, the voltage at any node depends on power flows <em>upstream</em> of it.
+</li>
+<li>
+Step 2: If an upstream LEM changes how its prosumers operate, it changes the voltage seen at the boundary of a downstream LEM.
+</li>
+<li>
+Step 3: This means the downstream LEM's costs (voltage violation penalties, feasible dispatch options) are affected by decisions made in a different LEM.
+</li>
+<li>
+Step 4: This cross-coalition dependency is called an externality — one coalition's choices impose costs or benefits on another.
+</li>
+<li>
+Step 5: When externalities exist, you cannot analyse a coalition's stability in isolation; you must model what the rest of the grid is doing.
+</li>
+</ul>
+<p><strong>Optimal Stable Partition (Problem II)</strong></p>
+<ul>
+<li>
+Step 1: List all possible ways to partition the grid into connected LEM coalitions.
+</li>
+<li>
+Step 2: Filter this list to keep only the <em>stable</em> partitions (those where every coalition has a non-empty core).
+</li>
+<li>
+Step 3: Among the remaining stable partitions, choose the one with the <em>lowest total grid cost</em>.
+</li>
+<li>
+Step 4: This is the optimal stable partition — it is the best outcome the DSO can achieve without inducing prosumers to defect.
+</li>
+</ul>
+<hr>
+<h2>Artefact 4 — Propositions Table</h2>
+<table>
+<tbody>
+<tr>
+<th>
+<p>Proposition</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Example / evidence from paper</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>A grid partition is caused by prosumers organising into LEM coalitions</p>
+</td>
+<td>
+<p>Causation</p>
+</td>
+<td>
+<p>Partitions emerge from prosumer coalition formation decisions, not DSO diktat</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Coalition costs depend on the grid partition (when externalities exist)</p>
+</td>
+<td>
+<p>Dependency</p>
+</td>
+<td>
+<p>Eq. (8): ϕ(Fᵢ; P) varies with P because shared voltages couple adjacent LEMs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Under perfect forecasts, the single largest LEM minimises total grid costs</p>
+</td>
+<td>
+<p>Explanatory</p>
+</td>
+<td>
+<p>Proposition V.1: Jensen's inequality shows PGC minimises ex-ante costs; zero ex-post costs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Under perfect forecasts and strict self-consumption, the largest LEM is the optimal stable partition</p>
+</td>
+<td>
+<p>Classification</p>
+</td>
+<td>
+<p>Theorem VI.1: largest coalition is both cost-minimising and stable under zero uncertainty</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Larger LEMs lead to higher ex-post voltage violation costs as forecast error increases</p>
+</td>
+<td>
+<p>Causation</p>
+</td>
+<td>
+<p>Fig. 8: voltage costs grow faster with noise for {1,2,3} than for {1,3},{2}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>As prosumption forecast noise increases, optimal stable partitions fragment into smaller LEMs</p>
+</td>
+<td>
+<p>Mechanism</p>
+</td>
+<td>
+<p>Table IV: optimal stable partition shifts from {1,2,3} at 0–5% noise to {1},{2},{3} at 20% noise</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The DSO's preferred partition (cost-minimising) may differ from the stable partition (prosumer-preferred)</p>
+</td>
+<td>
+<p>Causation</p>
+</td>
+<td>
+<p>Example 2: DSO prefers {1,2,3} but prosumers 1&amp;2 defect to {1,2},{3}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>A non-empty core is the condition for a coalition to be stable</p>
+</td>
+<td>
+<p>Operationalisation</p>
+</td>
+<td>
+<p>Definition V.1: stability ≡ ∃ cost allocation in Core(Fᵢ; P)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Stability of a partition requires <em>every</em> coalition in the partition to have a non-empty core</p>
+</td>
+<td>
+<p>Classification</p>
+</td>
+<td>
+<p>Definition V.2: one unstable coalition makes the whole partition unstable</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Boundary tariffs (κt) on cross-LEM power exchange incentivise self-consumption</p>
+</td>
+<td>
+<p>Mechanism</p>
+</td>
+<td>
+<p>Eq. (3): higher κt raises costs of trading across LEM boundaries, pushing coalitions toward autarky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Under strict self-consumption (κt → ∞) and single boundary nodes, coalition costs decouple from the wider partition</p>
+</td>
+<td>
+<p>Dependency</p>
+</td>
+<td>
+<p>Proposition IV.1: Assumptions IV.1–IV.2 eliminate externalities; costs depend only on internal network</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Moderate-sized coalitions can simultaneously minimise neighbourhood costs and total network costs</p>
+</td>
+<td>
+<p>Explanatory</p>
+</td>
+<td>
+<p>Table V (Lausanne case): {a,e},{b},{c},{d} beats both full LEM and individual self-consumption on both metrics</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The optimal stable partition problem is NP-hard in general</p>
+</td>
+<td>
+<p>Classification</p>
+</td>
+<td>
+<p>Section V.A: number of partitions grows super-exponentially; Algorithm 1 is computationally prohibitive</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Prosumer preferences can align with DSO preferences under moderate uncertainty</p>
+</td>
+<td>
+<p>Explanatory</p>
+</td>
+<td>
+<p>Table V: in the Lausanne case, the stable partition also minimises total network costs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Coalition stability under externalities requires modelling how remaining prosumers react to any defection</p>
+</td>
+<td>
+<p>Dependency</p>
+</td>
+<td>
+<p>Section V.B Case 2: hart-Kurz "inertia" assumption — remainder stays in existing coalitions</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Artefact 5 — Plain-Language Rewrites</h2>
+<blockquote>
+<p style="margin-left: 30px;">“<strong>Original:</strong> "This analysis must take into account the interests of both the grid operator and the constituent prosumers."”</p>
+</blockquote>
+<p><strong>Plain language:</strong> The problem of dividing the grid into LEM zones can't be solved by looking at just one party. The network operator wants to keep grid costs low and lines from overloading. Individual prosumers want to make sure their own energy bills are as low as possible, and they will reorganise if a different grouping saves them money. Any useful solution has to satisfy both.</p>
+<hr>
+<blockquote>
+<p style="margin-left: 30px;">“<strong>Original:</strong> "Power flow constraints introduce coupling between LEMs, meaning that LEMs' costs not only depend on its internal configuration, but may also depend on the configuration of other LEMs in the grid."”</p>
+</blockquote>
+<p><strong>Plain language:</strong> In an electricity network, what happens in one part of the grid affects voltages and flows everywhere else. This means that a LEM's electricity costs are not determined solely by its own members' behaviour — they are also shaped by what neighbouring LEMs are doing. If an upstream cluster of prosumers changes how it operates, it can raise or lower the voltage seen by a downstream cluster, changing that cluster's costs even though it made no changes itself.</p>
+<hr>
+<blockquote>
+<p style="margin-left: 30px;">“<strong>Original:</strong> "A non-empty core implies that there exists a cost allocation yFᵢ that ensures no subset of prosumers prefer to split off from the coalition Fᵢ to form an alternative coalition."”</p>
+</blockquote>
+<p><strong>Plain language:</strong> A coalition is stable if you can find at least one way to divide its total bill among its members such that no smaller group within the coalition would do better by leaving and operating on their own. If such a bill-splitting arrangement exists, the coalition is said to have a "non-empty core" — there is at least one outcome that keeps everyone content to stay.</p>
+<hr>
+<blockquote>
+<p style="margin-left: 30px;">“<strong>Original:</strong> "In the first stage, given a grid partition, an optimal power flow problem is solved under forecasts of nodal prosumption, to determine the ex-ante flexibility dispatch and costs."”</p>
+</blockquote>
+<p><strong>Plain language:</strong> Before the day begins, given a particular arrangement of LEM coalitions, each coalition runs an optimisation calculation using its best guesses about how much solar will be generated and how much electricity will be consumed at each point in the network. This calculation works out how each battery should be scheduled — when to charge, when to discharge — to minimise costs. The resulting schedule and its associated costs are the "ex-ante" (before-the-fact) outcomes.</p>
+<hr>
+<blockquote>
+<p style="margin-left: 30px;">“<strong>Original:</strong> "Numerical results show that in constrained grids, finer LEM partitions are preferred by both the DSO and the prosumers as the uncertainty in prosumption increases."”</p>
+</blockquote>
+<p><strong>Plain language:</strong> When the grid is already operating close to its physical limits (lines near their capacity, voltages near their bounds), and when forecasts of solar output or consumption are unreliable, both the network operator and the prosumers end up preferring <em>smaller</em> trading groups rather than one large market. Larger groups trade more energy across the network, which is efficient on average but risky when forecasts are wrong — a bad forecast error can trigger costly line overloads. Smaller, more self-sufficient groups keep those risks contained.</p>
+<hr>
+<blockquote>
+<p style="margin-left: 30px;">“<strong>Original:</strong> "We assume that the remainder prosumers remain in their existing coalitions and no new cooperative links are formed, reflecting inertia in reactions of prosumers."”</p>
+</blockquote>
+<p><strong>Plain language:</strong> When we model what happens if a subgroup of prosumers breaks away from their current LEM to form a new one, we assume everyone else does <em>nothing</em> — they stay exactly as they were. This "inertia" assumption is a simplification: in reality, the departure of one group might trigger others to reorganise. But modelling a full cascade of reactions would be very complex, so the paper assumes the rest of the market is passive and does not reform in response to any single defection.</p>
+<hr>
+<p><strong>Summary in one paragraph:</strong> This paper asks a fundamental market design question: if prosumers in a local distribution grid are free to self-organise into energy trading coalitions, which groupings will actually emerge, and are those groupings also good for the grid operator? Using cooperative game theory, the authors show that under certainty, one big market covering the whole grid is both efficient and stable. Under uncertainty (imperfect solar/load forecasts), larger markets become risky because forecast errors can trigger expensive network violations — so smaller, more self-sufficient coalitions become both preferred by prosumers and better for the grid. The paper provides a formal algorithm to find the "optimal stable partition": the arrangement that minimises total grid costs while guaranteeing that no group of prosumers has an incentive to reorganise.</p>
+</div></div></body></html>
